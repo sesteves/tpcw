@@ -78,6 +78,12 @@
   				<include name="TPCW_Database.${dbName}.java"/>
   			</fileset>
 		</copy>
+
+		<copy tofile="${srcDbDir}/TPCW_Populate.java" filtering="on" preservelastmodified="true">
+			<fileset dir="${basedir}" casesensitive="yes">
+  				<include name="TPCW_Populate.${dbName}.java"/>
+  			</fileset>
+		</copy>
 		<copy todir="${srcRbeDir}" filtering="on" preservelastmodified="true">
 			<fileset dir="${tpcwDir}/${rbeDir}" casesensitive="yes">
   				<include name="**/*.java"/>
