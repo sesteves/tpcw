@@ -7,8 +7,9 @@ We adapted an existing open-source implementation to work with HBase
 
 Requirements
 ------------
--Phoenix v3.0+
--JDK 6 or higher
+* Phoenix v3.0+
+* HBase v0.94.4+
+* JDK 6 or higher
 
 Installer and customization from: http://tpcw.deadpixel.de/
 Original available at: http://pharm.ece.wisc.edu/tpcw.shtml
