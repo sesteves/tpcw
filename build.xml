@@ -101,21 +101,21 @@
 
 	<!-- Build the class files for the servlets and the database populate class -->
   	<target name="build" depends="mksrc" description="Build the *.class files from source.">
-    		<javac srcdir="${srcServDir}" destdir="${buildServDir}">
+    		<javac srcdir="${srcServDir}" destdir="${buildServDir}" debug="on">
     			<classpath>
       				<pathelement path="${classpath}"/>
       				<pathelement path="${srcServDir}"/>
       				<pathelement location="${cpServ}"/>
     			</classpath>
     		</javac>
-    		<javac srcdir="${srcDir}" destdir="${buildRbeDir}" includes="rbe/**" source="1.3">
+    		<javac srcdir="${srcDir}" destdir="${buildRbeDir}" includes="rbe/**" source="1.3" debug="on">
     			<classpath>
       				<pathelement path="${classpath}"/>
       				<pathelement path="${srcRbeDir}"/>
       				<pathelement location="${cpServ}"/>
     			</classpath>
     		</javac>
-    		<javac srcdir="${srcDbDir}" destdir="${buildDbDir}">
+    		<javac srcdir="${srcDbDir}" destdir="${buildDbDir}" debug="on">
     			<classpath>
       				<pathelement path="${classpath}"/>
       				<pathelement path="${srcDbDir}"/>
