@@ -4,11 +4,11 @@
 #prefix for all requests. There are 10000 items in the database, and a standard
 #Think time of multiplier of 1.0.
 
-java -mx512M rbe.RBE -EB rbe.EBTPCW1Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://whitelace.ece.wisc.edu:8085/ -CUST 144000 -ITEM 10000 -TT 1.0
+java -mx512M rbe.RBE -EB rbe.EBTPCW1Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://localhost:8080/tpcw/ -CUST 144000 -ITEM 10000 -TT 1.0
 
 #This command line does the same, using the TPC-W Shopping Mix, and no think
 #time.
-java -mx512M rbe.RBE -EB rbe.EBTPCW2Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://whitelace.ece.wisc.edu:8085/ -CUST 144000 -ITEM 10000 -TT 0.0
+java -mx512M rbe.RBE -EB rbe.EBTPCW2Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://localhost:8080/tpcw/ -CUST 144000 -ITEM 10000 -TT 0.0
 
 #This command line does the same, using the TPC-W Ordering Mix
-java -mx512M rbe.RBE -EB rbe.EBTPCW2Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://whitelace.ece.wisc.edu:8085/ -CUST 144000 -ITEM 10000 -TT 0.0
+java -mx512M rbe.RBE -EB rbe.EBTPCW2Factory 30 -OUT run1.m -RU 100 -MI 1000 -RD 100 -WWW http://localhost:8080/tpcw/ -CUST 144000 -ITEM 10000 -TT 0.0
