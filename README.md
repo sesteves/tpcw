@@ -5,6 +5,8 @@ TPC-W is a transactional web e-Commerce benchmark ( http://www.tpc.org/tpcw/ )
 
 We adapted an existing open-source implementation to work with HBase
 
+###### Currently it only allows 1 EB
+
 Requirements
 ------------
 * Phoenix v3.0+
